@@ -4,9 +4,9 @@ AL5D LYNX simulatior on V-REP using C
 ## User Guide
 
 1. Download the V-REP PLAYER in [this page](http://www.coppeliarobotics.com/downloads.html) 
-2. Access the V-REP PLAYER folder and run it.
+2. Access the V-REP PLAYER folder and run V-REP:
 ```
-user@host$ ./vrep.sh
+user@host:~/V-REP_PLAYER$ ./vrep.sh
 ```
 3. Click **File ---> Open scene**. Browse the repository folder **AL5D-LYNX-Simulator ---> scene**, and choose the file *al5d_lynx.ttt*.
 4. Push the **Play** button at the top of the screen.

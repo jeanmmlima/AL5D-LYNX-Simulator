@@ -8,5 +8,19 @@ AL5D LYNX simulatior on V-REP using C
 ```
 user@host$ ./vrep.sh
 ```
-3. Go to **File ---> Open scene**. Browse to the repository folder **AL5D-LYNX-Simulator ---> scene**, and choose the file *al5d_lynx.ttt*.
+3. Click **File ---> Open scene**. Browse the repository folder **AL5D-LYNX-Simulator ---> scene**, and choose the file *al5d_lynx.ttt*.
 4. Push the **Play** button at the top of the screen.
+5. Browse the repository folder **AL5D-LYNX-Simulator ---> build**. In terminal, run *cmake* and *make* commands as shown below:
+```
+user@host:~/AL5D-LYNX-Simulator/build$ cmake ../
+
+user@host:~/AL5D-LYNX-Simulator/build$ make
+
+```
+6. Now, run the *demo* application:
+
+```
+user@host:~/AL5D-LYNX-Simulator/build$ ./demo
+
+```
+7. If you make any changes in the *demo.c* file you need to **repeat step 5**.

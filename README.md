@@ -1,5 +1,5 @@
 # AL5D-LYNX-Simulator
-AL5D LYNX simulatior on V-REP using C
+AL5D LYNX simulatior on V-REP using C v1.0 BETA
 
 ## User Guide
 

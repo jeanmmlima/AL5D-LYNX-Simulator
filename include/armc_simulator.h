@@ -24,6 +24,8 @@ DEVELOPED BY: Eng. Msc. Jean M. M. Lima.
 
 	#define HOME_POS "#0P1500#1P1500#2P1500#3P1500#4P1500"
 
+	#define BUFSIZE 1024
+
 	// SERVOS //
 
 	// Servo da base HS-485HB //

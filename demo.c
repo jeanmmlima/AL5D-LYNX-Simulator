@@ -1,8 +1,11 @@
 
 #include <stdio.h>
+#include <unistd.h>
 #include "armc_simulator.h"
 
 int main(){
+
+  char *comando;
 
 	ufrn_header();
 
@@ -14,19 +17,63 @@ int main(){
   		setup(clientID);
   		
 
-
+      comando = (char*) malloc(sizeof(char)*BUFSIZE);
     	// Enquanto a simulacao for ativa
     	while(simulacao_ativa(clientID)!=-1){
 
+        //////////////////////
+        // PRIMEIRO COMANDO //
+        //////////////////////
 
-			envia_comando(clientID,"#0P1500#1P1500#2P1500#3P1500#4P1500");
-			envia_comando(clientID,"#0P2500#1P1500#2P1500#3P2500#4P1400");
-      printf("%i\n",BUFSIZE);
-			
+        
+        printf("\nPRIMEIRO COMANDO - POSICAL INICIAL\n");
+
+        sprintf(comando,"%s",HOME_POS);
+
+
+        printf("Envio de comando: %s\n",comando);
+  			envia_comando(clientID,comando);
+  			
+        printf("Pressione enter para continuar...");
+        getchar();
+
+        /////////////////////
+        // SEGUNDO COMANDO //
+        /////////////////////
+        printf("\nSEGUNDO COMANDO - MOVER O PUNHO\n");
+
+        printf("Espere 2 segundos...\n");
+        sleep(2);
+        memset(comando, 0, BUFSIZE);
+
+        sprintf(comando,"#3P2500");
+
+        printf("Envio de comando: %s\n",comando);
+        envia_comando(clientID,comando);
+
+        printf("Pressione enter para continuar...");
+        getchar();
+
+        //////////////////////
+        // TERCEIRO COMANDO //
+        //////////////////////
+        printf("\nTERCEIRO COMANDO - MOVER A GARRA\n");
+
+        printf("Espere 2 segundos...\n");
+        sleep(2);
+        memset(comando, 0, BUFSIZE);
+
+        sprintf(comando,"#%dP%d",4,500);
+        printf("Envio de comando: %s\n",comando);
+        envia_comando(clientID,comando);
+
+        // FIM DO PROGRAMA DEMO //
+        fecha_porta(clientID);
+        printf("\nAcesso a simulador finalizado\n");
 
     	}
 
-    	fecha_porta(clientID);
+    //	fecha_porta(clientID);
 
 
   	}

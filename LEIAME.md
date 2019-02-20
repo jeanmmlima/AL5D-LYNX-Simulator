@@ -1,5 +1,5 @@
-# AL5D-LYNX-Simulator
-Simulador AL5D LYNX no V-REP usando linguagem C
+# AL5D-LYNX-Simulator v1.0 BETA
+Simulador AL5D LYNX no V-REP usando linguagem C verão 1.0 BETA
 
 ## Guia do Usuário
 
@@ -25,4 +25,8 @@ user@host:~/AL5D-LYNX-Simulator/build$ ./demo
 ```
 7. Se você fizer qualquer alteração no arquivo *demo.c*, é preciso **repetir o passo 5**.
 
-8. Mais informações sobre o braço robótimo AL5D-LYNX [nesse material](https://www.dca.ufrn.br/~jean/apostila_al5dv2.pdf).
+8. Como é uma versão *BETA*, pode apresentar erros/bugs durante a operação. Caso identifique algum, por favor, reportar via email para: **jean@dca.ufrn.br**. Sua contribuição é **muito** importante para o desenvolvimento e melhoria desse programa!
+
+9. Mais informações sobre o braço robótimo AL5D-LYNX [nesse material](https://www.dca.ufrn.br/~jean/apostila_al5dv2.pdf).
+
+

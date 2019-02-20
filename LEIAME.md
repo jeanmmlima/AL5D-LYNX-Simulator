@@ -25,7 +25,7 @@ user@host:~/AL5D-LYNX-Simulator/build$ ./demo
 ```
 7. Se você fizer qualquer alteração no arquivo *demo.c*, é preciso **repetir o passo 5**.
 
-8. Como é uma versão *BETA*, pode apresentar erros/bugs durante a operação. Caso identifique algum, por favor, reportar via email para: **jean@dca.ufrn.br** ou criar uma *issue* no repositório. Sua contribuição é **muito** importante para o desenvolvimento e melhoria desse programa!
+8. Como é uma versão *BETA*, pode apresentar erros/bugs durante a operação. Caso identifique algum, por favor, reportar via email para: **jean@dca.ufrn.br**. Sua contribuição é **muito** importante para o desenvolvimento e melhoria desse programa!
 
 9. Mais informações sobre o braço robótimo AL5D-LYNX [nesse material](https://www.dca.ufrn.br/~jean/apostila_al5dv2.pdf).
 

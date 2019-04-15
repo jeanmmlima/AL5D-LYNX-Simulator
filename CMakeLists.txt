@@ -11,6 +11,8 @@ ENDIF(CMAKE_COMPILER_IS_GNUCC)
 add_definitions(-DNON_MATLAB_PARSING)
 add_definitions(-DMAX_EXT_API_CONNECTIONS=255)
 
+set(CMAKE_C_FLAGS "-lm")
+
 set(SOURCES
     include/extApi.c
     include/extApiPlatform.c
@@ -41,7 +43,7 @@ add_executable(demo
                ${SOURCES}
 	       ${HEADERS})
 	       
-target_link_libraries(demo ${CMAKE_THREAD_LIBS_INIT} ${ARMC})
+target_link_libraries(demo ${CMAKE_THREAD_LIBS_INIT} ${ARMC} ${CMAKE_C_FLAGS})
 
 
 install(TARGETS demo RUNTIME DESTINATION bin)

@@ -1,10 +1,10 @@
 # AL5D-LYNX-Simulator v1.0 BETA
-Simulador AL5D LYNX no V-REP usando linguagem C verão 1.0 BETA
+Simulador AL5D LYNX no V-REP usando linguagem C versão 1.0 BETA
 
 ## Guia do Usuário
 
 1. Baixe o V-REP PLAYER [nessa página](http://www.coppeliarobotics.com/downloads.html) 
-2. Acesse a pasta do V-REP PLAYER e execute o V-REP:
+2. Acesse a pasta do V-REP PLAYER. No terminal, execute o V-REP:
 ```
 user@host:~/V-REP_PLAYER$ ./vrep.sh
 ```
